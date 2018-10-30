@@ -1,0 +1,19 @@
+<h1>Inspirational Quotes</h1>
+<ul>
+    {% for quote in object_list %}
+        <li>
+            {% if quote.picture %}
+            <img src="{{ quote.get_thumbnail_picture_url }}">
+            {% endif %}
+            <blockquote>
+                {{ quote.quote }}
+            </blockquote>
+            <cite>{{ quote.author }}</cite>
+        </li>
+    {% empty %}
+        <li>
+            No quotes yet.
+            <a href="{% url 'quote-add' %}">Add one!</a>
+        </li>
+    {% endfor %}
+</ul>

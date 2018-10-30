@@ -1,0 +1,5 @@
+{% load thumbnail %}
+<a href="{% url 'product-detail' slug=product.slug %}"
+   target="{{ target }}">
+    <img src="{% thumbnail photo size %}"
+         alt="{{ product.title }} preview"></a>

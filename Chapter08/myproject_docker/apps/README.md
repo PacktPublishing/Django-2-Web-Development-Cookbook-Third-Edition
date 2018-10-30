@@ -1,0 +1,1 @@
+All applications to be used in the project are stored under the apps directory, which allows them to be pulled in individually either from version control or other source locations. Each one is exposed within the container by adding a corresponding entry in the `volumes` list for the app in `docker-compose.yml`.

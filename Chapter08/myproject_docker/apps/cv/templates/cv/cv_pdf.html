@@ -1,0 +1,71 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{{ cv }}</title>
+    <style>
+        @page {
+            size: a4 portrait;
+            margin: 2.5cm 1.5cm;
+
+            @frame footer_frame {
+                -pdf-frame-content: footer_content;
+                bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                height: 1cm;
+            }
+        }
+
+        #footer_content {
+            color: #666;
+            font-size: 10pt;
+            text-align: center;
+        }
+
+        h1 { text-align: center; }
+        th, td { vertical-align: top; }
+        /* ... additional styles here ... */
+    </style>
+</head>
+<body>
+<div>
+    <h1>Curriculum Vitae for {{ cv }}</h1>
+
+    <table><tr>
+        <td>
+            <h2>Contact Information</h2>
+            <p><b>Email:</b> {{ cv.email }}</p>
+        </td>
+        <td align="right">
+            <img src="{% static 'site/img/smiley.jpg' %}"
+                 width="100" height="100" />
+        </td>
+    </tr></table>
+
+    <h2>Experience</h2>
+
+    {% for experience in cv.experience_set.all %}
+        <h3>{{ experience.position }} at {{ experience.company }}</h3>
+        <p><b>
+            {{ experience.from_date|date:"F Y" }} -
+            {{ experience.till_date|date:"F Y"|default:"present" }}
+        </b></p>
+        <p>
+            <b>Skills gained</b><br>
+            {{ experience.skills|linebreaksbr }}
+        </p>
+    {% endfor %}
+</div>
+<pdf:nextpage>
+<div>
+    This is an empty page to make a paper plane.
+</div>
+<div id="footer_content">
+    Document generated at {% now "Y-m-d" %} |
+    Page <pdf:pagenumber> of <pdf:pagecount>
+    | Smiley obtained from clipartextras.com
+</div>
+</body>
+</html>

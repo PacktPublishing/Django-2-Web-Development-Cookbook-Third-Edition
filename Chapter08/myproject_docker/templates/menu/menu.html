@@ -1,0 +1,29 @@
+{% load menu_tags %}
+
+{% for child in children %}
+<li class="nav-item{% if child.selected %}
+           selected{% endif %}{% if child.ancestor %}
+           ancestor{% endif %}{% if child.sibling %}
+           sibling{% endif %}{% if child.descendant %}
+           descendant{% endif %}{% if child.children %}
+           dropdown{% endif %}{% if child.cssextension %}
+           {{ child.cssextension.menu_item_css_class }}{% endif %}">
+    {% if child.children %}
+    <a id="dropdown-{{ child.get_menu_title|slugify }}"
+       class="nav-link dropdown-toggle{% if child.selected %}
+              active{% endif %}" href="#"
+       role="button" data-toggle="dropdown"
+       aria-haspopup="true" aria-expanded="false">
+        {{ child.get_menu_title }}</a>
+    <ul class="dropdown-menu"
+        aria-labelledby="dropdown-{{ child.get_menu_title|slugify }}">
+        {% show_menu from_level to_level extra_inactive extra_active template "" "" child %}
+    </ul>
+    {% else %}
+    <a class="nav-link{% if child.selected %}
+              active{% endif %}"
+       href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">
+        {{ child.get_menu_title }}</a>
+    {% endif %}
+</li>
+{% endfor %}

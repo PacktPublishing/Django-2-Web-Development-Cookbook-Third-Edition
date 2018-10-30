@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+    <form method="POST" enctype="multipart/form-data"
+          action="{{ form.action }}">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+
+        {% for fieldset in form.fieldsets %}
+            <fieldset{% if fieldset.id %} id="{{ fieldset.id }}"{% endif %}
+                                          class="mb-3">
+                {% if fieldset.legend %}
+                    <legend>{{ fieldset.legend }}</legend>
+                {% endif %}
+                {% for field in fieldset.fields %}
+                    <div class="form-group{% if field.field.required %}
+                    required{% endif %}">
+                        <label for="{{ field.id_for_label }}">
+                            {% trans field.label %}
+                        </label>
+                        {{ field }}
+                        {{ field.errors }}
+                    </div>
+                {% endfor %}
+            </fieldset>
+        {% endfor %}
+
+        <div class="form-actions mb-5">
+            <button type="submit" class="btn btn-primary">
+                {% trans "Save" %}
+            </button>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n watermark %}
+
+{% block content %}
+<h2>{% trans "Inspirational Quote" %}</h2>
+
+{% if inspirationalquote.picture %}
+<img src="{{ inspirationalquote.picture.url|watermark:"Basic Two-Tone,opacity=35,tile=1,position=BL,rotation=30" }}" alt="">
+{% endif %}
+<blockquote>
+    <h3>{{ inspirationalquote.quote }}</h3>
+    <cite>{{ inspirationalquote.author }}</cite>
+</blockquote>
+{% endblock %}

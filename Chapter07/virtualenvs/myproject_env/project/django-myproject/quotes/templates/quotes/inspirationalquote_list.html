@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n thumbnail %}
+
+{% block content %}
+<h2>{% trans "Inspirational Quotes" %}</h2>
+{% if inspirationalquote_list.count == 0 %}
+    <p>{% trans "No quotes to show!" %}</p>
+{% else %}
+    <ul class="quote-list">
+        {% for quote in inspirationalquote_list %}
+        <li>
+            {% if quote.picture %}
+            <a href="{% url 'quote-detail' pk=quote.pk %}">
+                <img src="{% thumbnail quote.picture '100x100' %}"
+                     alt="" class="align-right"></a>
+            {% endif %}
+            <p>{{ quote.quote|truncatechars:20 }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endblock %}
