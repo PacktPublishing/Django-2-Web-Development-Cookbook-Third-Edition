@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="django" name="Django">
+      <configuration>
+        <option name="rootFolder" value="$MODULE_DIR$/utils" />
+        <option name="settingsModule" value="" />
+        <option name="manageScript" value="" />
+        <option name="environment" value="&lt;map/&gt;" />
+        <option name="doNotUseTestRunner" value="false" />
+        <option name="trackFilePattern" value="migrations" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/requirements" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/externals" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/locale" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/myproject/media" />
+      <excludeFolder url="file://$MODULE_DIR$/myproject/static" />
+      <excludeFolder url="file://$MODULE_DIR$/myproject/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Django" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/email_messages/templates" />
+        <option value="$MODULE_DIR$/bulletin_board/templates" />
+        <option value="$MODULE_DIR$/external_auth/templates" />
+        <option value="$MODULE_DIR$/cv/templates" />
+        <option value="$MODULE_DIR$/likes/templates" />
+        <option value="$MODULE_DIR$/locations/templates" />
+        <option value="$MODULE_DIR$/movies/templates" />
+        <option value="$MODULE_DIR$/myproject/templates" />
+        <option value="$MODULE_DIR$/quotes/templates" />
+        <option value="$MODULE_DIR$/search/templates" />
+        <option value="$MODULE_DIR$/utils/templates" />
+        <option value="$MODULE_DIR$/viral_videos/templates" />
+      </list>
+    </option>
+  </component>
+</module>

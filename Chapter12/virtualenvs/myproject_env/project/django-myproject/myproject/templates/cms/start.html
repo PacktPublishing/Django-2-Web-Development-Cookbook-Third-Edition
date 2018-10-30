@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block meta_tags %}
+    <meta name="description"
+          content="{% page_attribute meta_description %}"/>
+{% endblock %}
+
+{% block content %}
+    {% comment %}
+    Here goes very customized website-specific content like
+    slideshows, latest tweets, latest news, latest profiles, etc.
+    {% endcomment %}
+{% endblock %}

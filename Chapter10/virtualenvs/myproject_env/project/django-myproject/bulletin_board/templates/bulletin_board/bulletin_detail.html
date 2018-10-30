@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+    <h1>
+        {{ object.bulletin_type|capfirst }}:
+        <strong>{{ object.title }}</strong>
+
+        {% if request.user.is_authenticated %}
+            <a class="btn btn-outline-secondary btn-sm"
+               href="{% url "bulletin-edit" pk=bulletin.pk %}">Edit</a>
+        {% endif %}
+    </h1>
+
+    {% if category %}
+        <p><em>{{ object.category.title }}</em></p>
+    {% endif %}
+
+    {% include "bulletin_board/feeds/bulletin_description.html" with obj=object %}
+
+    <h3>Contact {{ object.contact_person }}</h3>
+
+    {% if object.phone or object.email %}
+        {% if object.phone %}
+            <p>Phone: {{ object.phone }}</p>
+        {% endif %}
+
+        {% if object.email %}
+            <p>Email: <a href="mailto:{{ object.email }}?subject={{ object.title|escape }}">
+                {{ object.email }}</p>
+        {% endif %}
+    {% endif %}
+
+    <p><a href="{% url "bulletin-list" %}">Back to Listing</a></p>
+{% endblock %}

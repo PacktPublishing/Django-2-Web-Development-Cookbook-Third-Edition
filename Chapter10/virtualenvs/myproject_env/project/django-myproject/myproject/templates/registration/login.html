@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'site/css/login.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <form method="POST" action="{% url 'user-login' %}"
+              class="form-signin">
+            {% csrf_token %}
+            <h2 class="my-3">{% trans "Please sign in" %}</h2>
+
+            {{ form.non_field_errors }}
+
+            <fieldset class="mb-3" required>
+                <div class="control-group username required mb-3">
+                    <label for="{{ form.username.id_for_label }}"
+                           class="control-label requiredField">
+                        {% trans form.username.label %}
+                    </label>
+                    <div class="controls">
+                        {{ form.username }}
+                        {{ form.username.errors }}
+                    </div>
+                </div>
+                <div class="control-group password required mb-3">
+                    <label for="{{ form.password.id_for_label }}"
+                           class="control-label requiredField">
+                        {% trans form.password.label %}
+                    </label>
+                    <div class="controls">
+                        {{ form.password }}
+                        {{ form.password.errors }}
+                    </div>
+                </div>
+            </fieldset>
+            {{ form.next }}
+            <div class="form-actions mb-5 text-right">
+                <button type="submit" class="btn btn-lg btn-primary">
+                    {% trans "Login" %}
+                </button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

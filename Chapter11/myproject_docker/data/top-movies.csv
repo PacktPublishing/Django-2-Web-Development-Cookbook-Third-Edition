@@ -1,0 +1,251 @@
+title,release_year,rating,rank
+"The Shawshank Redemption",1994,9.2,1
+"The Godfather",1972,9.2,2
+"The Godfather: Part II",1974,9.0,3
+"The Dark Knight",2008,9.0,4
+"12 Angry Men",1957,8.9,5
+"Schindler's List",1993,8.9,6
+"The Lord of the Rings: The Return of the King",2003,8.9,7
+"Pulp Fiction",1994,8.9,8
+"The Good, the Bad and the Ugly",1966,8.8,9
+"Fight Club",1999,8.8,10
+"The Lord of the Rings: The Fellowship of the Ring",2001,8.8,11
+"Forrest Gump",1994,8.7,12
+"Star Wars: Episode V - The Empire Strikes Back",1980,8.7,13
+"Inception",2010,8.7,14
+"The Lord of the Rings: The Two Towers",2002,8.7,15
+"One Flew Over the Cuckoo's Nest",1975,8.7,16
+"Goodfellas",1990,8.7,17
+"The Matrix",1999,8.6,18
+"Seven Samurai",1954,8.6,19
+"City of God",2002,8.6,20
+"Se7en",1995,8.6,21
+"Star Wars: Episode IV - A New Hope",1977,8.6,22
+"The Silence of the Lambs",1991,8.6,23
+"It's a Wonderful Life",1946,8.6,24
+"Life Is Beautiful",1997,8.6,25
+"The Usual Suspects",1995,8.5,26
+"Spirited Away",2001,8.5,27
+"Saving Private Ryan",1998,8.5,28
+"Léon: The Professional",1994,8.5,29
+"The Green Mile",1999,8.5,30
+"Interstellar",2014,8.5,31
+"American History X",1998,8.5,32
+"Psycho",1960,8.5,33
+"City Lights",1931,8.5,34
+"Once Upon a Time in the West",1968,8.5,35
+"Casablanca",1942,8.5,36
+"Modern Times",1936,8.5,37
+"The Intouchables",2011,8.5,38
+"The Pianist",2002,8.5,39
+"The Departed",2006,8.5,40
+"Terminator 2",1991,8.5,41
+"Back to the Future",1985,8.5,42
+"Rear Window",1954,8.5,43
+"Whiplash",2014,8.5,44
+"Raiders of the Lost Ark",1981,8.5,45
+"Gladiator",2000,8.5,46
+"The Lion King",1994,8.5,47
+"Avengers: Infinity War",2018,8.5,48
+"The Prestige",2006,8.5,49
+"Memento",2000,8.4,50
+"Apocalypse Now",1979,8.4,51
+"Alien",1979,8.4,52
+"The Great Dictator",1940,8.4,53
+"Cinema Paradiso",1988,8.4,54
+"Grave of the Fireflies",1988,8.4,55
+"Sunset Boulevard",1950,8.4,56
+"Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",1964,8.4,57
+"The Lives of Others",2006,8.4,58
+"Paths of Glory",1957,8.4,59
+"The Shining",1980,8.4,60
+"Django Unchained",2012,8.4,61
+"WALL·E",2008,8.4,62
+"Princess Mononoke",1997,8.4,63
+"Witness for the Prosecution",1957,8.4,64
+"Coco",2017,8.4,65
+"American Beauty",1999,8.4,66
+"The Dark Knight Rises",2012,8.4,67
+"Oldboy",2003,8.4,68
+"Aliens",1986,8.3,69
+"Once Upon a Time in America",1984,8.3,70
+"Das Boot",1981,8.3,71
+"Citizen Kane",1941,8.3,72
+"Braveheart",1995,8.3,73
+"Vertigo",1958,8.3,74
+"North by Northwest",1959,8.3,75
+"Reservoir Dogs",1992,8.3,76
+"Your Name.",2016,8.3,77
+"Star Wars: Episode VI - Return of the Jedi",1983,8.3,78
+"M",1931,8.3,79
+"Dangal",2016,8.3,80
+"Requiem for a Dream",2000,8.3,81
+"Amadeus",1984,8.3,82
+"Like Stars on Earth",2007,8.3,83
+"Lawrence of Arabia",1962,8.3,84
+"Eternal Sunshine of the Spotless Mind",2004,8.3,85
+"A Clockwork Orange",1971,8.3,86
+"Amélie",2001,8.3,87
+"Double Indemnity",1944,8.3,88
+"3 Idiots",2009,8.3,89
+"2001: A Space Odyssey",1968,8.3,90
+"Toy Story",1995,8.3,91
+"Taxi Driver",1976,8.3,92
+"Singin' in the Rain",1952,8.3,93
+"Full Metal Jacket",1987,8.3,94
+"Inglourious Basterds",2009,8.3,95
+"To Kill a Mockingbird",1962,8.3,96
+"Bicycle Thieves",1948,8.3,97
+"The Kid",1921,8.3,98
+"The Sting",1973,8.3,99
+"Toy Story 3",2010,8.3,100
+"Good Will Hunting",1997,8.3,101
+"The Hunt",2012,8.3,102
+"Snatch",2000,8.3,103
+"Monty Python and the Holy Grail",1975,8.2,104
+"Scarface",1983,8.2,105
+"For a Few Dollars More",1965,8.2,106
+"L.A. Confidential",1997,8.2,107
+"The Apartment",1960,8.2,108
+"Metropolis",1927,8.2,109
+"A Separation",2011,8.2,110
+"Indiana Jones and the Last Crusade",1989,8.2,111
+"Rashomon",1950,8.2,112
+"Up",2009,8.2,113
+"All About Eve",1950,8.2,114
+"Yojimbo",1961,8.2,115
+"Batman Begins",2005,8.2,116
+"Some Like It Hot",1959,8.2,117
+"Unforgiven",1992,8.2,118
+"Downfall",2004,8.2,119
+"The Treasure of the Sierra Madre",1948,8.2,120
+"Die Hard",1988,8.2,121
+"Heat",1995,8.2,122
+"Ikiru",1952,8.2,123
+"Raging Bull",1980,8.2,124
+"The Great Escape",1963,8.2,125
+"Incendies",2010,8.2,126
+"My Father and My Son",2005,8.2,127
+"Children of Heaven",1997,8.2,128
+"Pan's Labyrinth",2006,8.2,129
+"The Third Man",1949,8.2,130
+"Chinatown",1974,8.2,131
+"My Neighbor Totoro",1988,8.2,132
+"Ran",1985,8.2,133
+"Howl's Moving Castle",2004,8.2,134
+"Judgment at Nuremberg",1961,8.2,135
+"The Secret in Their Eyes",2009,8.2,136
+"The Gold Rush",1925,8.2,137
+"The Bridge on the River Kwai",1957,8.2,138
+"Three Billboards Outside Ebbing, Missouri",2017,8.2,139
+"On the Waterfront",1954,8.2,140
+"A Beautiful Mind",2001,8.2,141
+"Lock, Stock and Two Smoking Barrels",1998,8.2,142
+"Casino",1995,8.2,143
+"The Seventh Seal",1957,8.2,144
+"Inside Out",2015,8.2,145
+"Room",2015,8.1,146
+"The Elephant Man",1980,8.1,147
+"Mr. Smith Goes to Washington",1939,8.1,148
+"The Wolf of Wall Street",2013,8.1,149
+"V for Vendetta",2005,8.1,150
+"Warrior",2011,8.1,151
+"Blade Runner",1982,8.1,152
+"The General",1926,8.1,153
+"Wild Strawberries",1957,8.1,154
+"Dial M for Murder",1954,8.1,155
+"Trainspotting",1996,8.1,156
+"No Country for Old Men",2007,8.1,157
+"There Will Be Blood",2007,8.1,158
+"Gone with the Wind",1939,8.1,159
+"The Sixth Sense",1999,8.1,160
+"Fargo",1996,8.1,161
+"The Thing",1982,8.1,162
+"Gran Torino",2008,8.1,163
+"The Deer Hunter",1978,8.1,164
+"Finding Nemo",2003,8.1,165
+"Sherlock Jr.",1924,8.1,166
+"Come and See",1985,8.1,167
+"The Big Lebowski",1998,8.1,168
+"Kill Bill: Vol. 1",2003,8.1,169
+"Shutter Island",2010,8.1,170
+"Cool Hand Luke",1967,8.1,171
+"Rebecca",1940,8.1,172
+"Tokyo Story",1953,8.1,173
+"Sunrise",1927,8.1,174
+"Hacksaw Ridge",2016,8.1,175
+"Mary and Max",2009,8.1,176
+"How to Train Your Dragon",2010,8.1,177
+"Gone Girl",2014,8.1,178
+"Wild Tales",2014,8.1,179
+"Jurassic Park",1993,8.1,180
+"Into the Wild",2007,8.1,181
+"Life of Brian",1979,8.1,182
+"The Bandit",1996,8.1,183
+"It Happened One Night",1934,8.1,184
+"In the Name of the Father",1993,8.1,185
+"Platoon",1986,8.1,186
+"Stand by Me",1986,8.1,187
+"The Grand Budapest Hotel",2014,8.1,188
+"Network",1976,8.1,189
+"The Truman Show",1998,8.1,190
+"Stalker",1979,8.1,191
+"Andrei Rublev",1966,8.1,192
+"Hotel Rwanda",2004,8.1,193
+"Ben-Hur",1959,8.1,194
+"Persona",1966,8.1,195
+"Memories of Murder",2003,8.1,196
+"Rang De Basanti",2006,8.1,197
+"The Wages of Fear",1953,8.1,198
+"12 Years a Slave",2013,8.1,199
+"The Passion of Joan of Arc",1928,8.1,200
+"Million Dollar Baby",2004,8.1,201
+"Rush",2013,8.1,202
+"Mad Max: Fury Road",2015,8.1,203
+"Before Sunrise",1995,8.1,204
+"The 400 Blows",1959,8.1,205
+"Spotlight",2015,8.1,206
+"Logan",2017,8.1,207
+"Amores Perros",2000,8.1,208
+"Hachi: A Dog's Tale",2009,8.1,209
+"Prisoners",2013,8.1,210
+"The Princess Bride",1987,8.1,211
+"Nausicaä of the Valley of the Wind",1984,8.0,212
+"Butch Cassidy and the Sundance Kid",1969,8.0,213
+"Catch Me If You Can",2002,8.0,214
+"Harry Potter and the Deathly Hallows: Part 2",2011,8.0,215
+"Rocky",1976,8.0,216
+"Barry Lyndon",1975,8.0,217
+"Monsters, Inc.",2001,8.0,218
+"The Maltese Falcon",1941,8.0,219
+"The Grapes of Wrath",1940,8.0,220
+"Diabolique",1955,8.0,221
+"Donnie Darko",2001,8.0,222
+"Blade Runner 2049",2017,8.0,223
+"The Terminator",1984,8.0,224
+"Gandhi",1982,8.0,225
+"Dead Poets Society",1989,8.0,226
+"La La Land",2016,8.0,227
+"The Nights of Cabiria",1957,8.0,228
+"La Haine",1995,8.0,229
+"Groundhog Day",1993,8.0,230
+"The Wizard of Oz",1939,8.0,231
+"Paper Moon",1973,8.0,232
+"Jaws",1975,8.0,233
+"The Help",2011,8.0,234
+"Gangs of Wasseypur",2012,8.0,235
+"In the Mood for Love",2000,8.0,236
+"A Wednesday",2008,8.0,237
+"Before Sunset",2004,8.0,238
+"The Bourne Ultimatum",2007,8.0,239
+"Paris, Texas",1984,8.0,240
+"Tangerines",2013,8.0,241
+"Guardians of the Galaxy",2014,8.0,242
+"The Best Years of Our Lives",1946,8.0,243
+"Castle in the Sky",1986,8.0,244
+"Pirates of the Caribbean: The Curse of the Black Pearl",2003,8.0,245
+"The Handmaiden",2016,8.0,246
+"Dog Day Afternoon",1975,8.0,247
+"Beauty and the Beast",1991,8.0,248
+"Fanny and Alexander",1982,8.0,249
+"Song of the Sea",2014,8.0,250

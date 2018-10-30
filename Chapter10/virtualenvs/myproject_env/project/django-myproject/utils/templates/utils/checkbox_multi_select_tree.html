@@ -1,0 +1,40 @@
+{% load crispy_forms_filters %}
+{% load l10n %}
+
+<div id="div_{{ field.auto_id }}"
+     class="form-group{% if wrapper_class %}
+            {{ wrapper_class }}{% endif %}
+            {% if form_show_errors and field.errors %}
+            has-error{% endif %}
+            {% if field.css_classes %}
+            {{ field.css_classes }}{% endif %}">
+    {% if field.label and form_show_labels %}
+        <label for="{{ field.id_for_label }}"
+               class="control-label {{ label_class }}
+                  {% if field.field.required %}
+                  requiredField{% endif %}">
+            {{ field.label|safe }}{% if field.field.required %}
+                <span class="asteriskField">*</span>{% endif %}
+        </label>
+    {% endif %}
+
+    <div class="controls {{ field_class }}"{% if flat_attrs %}
+        {{ flat_attrs|safe }}{% endif %}>
+        {% include 'bootstrap3/layout/field_errors_block.html' %}
+
+        {% for choice_value, choice_instance in field.field.choices %}
+            <label class="form-check checkbox{% if inline_class %}-{{ inline_class }}{% endif %}
+                          level-{{ choice_instance.level }}">
+                <input type="checkbox" class="form-check-input"
+                       {% if choice_value in field.value or choice_value|stringformat:'s' in field.value or choice_value|stringformat:'s' == field.value|stringformat:'s' %} checked{% endif %}
+                       name="{{ field.html_name }}"
+                       id="id_{{field.html_name}}_{{forloop.counter}}"
+                       value="{{ choice_value|unlocalize }}"
+                {{ field.field.widget.attrs|flatatt }}>
+                <span>{{ choice_instance }}</span>
+            </label>
+        {% endfor %}
+
+        {% include "bootstrap3/layout/help_text.html" %}
+    </div>
+</div>

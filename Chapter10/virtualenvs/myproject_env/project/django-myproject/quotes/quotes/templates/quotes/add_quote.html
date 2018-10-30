@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'site/css/lib/jquery.fileupload.css' %}">
+{% endblock %}
+
+{% block content %}
+    <form method="post" action="" enctype="multipart/form-data"
+          class="change-quote">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% trans "Save" %}</button>
+    </form>
+{% endblock %}
+
+{% block extrabody %}
+    {% include "quotes/includes/tmpl-upload.html" %}
+    {% include "quotes/includes/tmpl-download.html" %}
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'site/js/lib/tmpl.min.js' %}"></script>
+    <script src="{% static 'site/js/lib/jquery.ui.widget.js' %}"></script>
+    <script src="{% static 'site/js/lib/jquery.fileupload.js' %}"></script>
+    <script src="{% static 'site/js/lib/jquery.fileupload-ui.js' %}"></script>
+    <script src="{% static 'quotes/js/uploader.js' %}"></script>
+    <script>
+        jQuery(function($){
+            if (typeof Uploader !== "undefined") {
+                var form = document.querySelector("form.change-quote");
+                var uploadUrl = "{% url 'quote-picture-upload' %}";
+                new Uploader(form, uploadUrl, {
+                    "labels": {
+                        "Select Picture": "{% trans 'Select Picture' %}",
+                        "Cancel": "{% trans 'Cancel' %}",
+                        "Remove": "{% trans 'Remove' %}",
+                        "Error": "{% trans 'Error' %}",
+                        "Processing...": "{% trans 'Processing...' %}",
+                        "Start": "{% trans 'Start' %}"
+                    }
+                });
+            }
+        });
+    </script>
+{% endblock %}

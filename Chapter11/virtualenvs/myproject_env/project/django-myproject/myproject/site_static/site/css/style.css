@@ -1,0 +1,26 @@
+#map {
+    border: 1px solid #000;
+    box-sizing: padding-box;
+    height: 0;
+    padding-bottom: calc(9 / 16 * 100%); /* 16:9 aspect ratio */
+    width: 100%;
+}
+
+picture img {
+    width: 100%;
+}
+
+body.playful {
+    background-color: #ffe;
+}
+
+.navbar-light .navbar-nav .nav-item.featured .nav-link.active {
+    color: #fc0;
+    text-shadow: 2px 2px 5px #630;
+}
+
+@media screen and (max-width: 480px) {
+    #map {
+        display: none; /* hide on mobile devices (esp. portrait) */
+    }
+}

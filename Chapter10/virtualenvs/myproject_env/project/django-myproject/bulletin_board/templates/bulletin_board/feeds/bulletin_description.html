@@ -1,0 +1,8 @@
+{% if obj.image %}
+<p>
+    <a href="{{ obj.get_url }}">
+        <img src="{{ MEDIA_URL }}{{ obj.image.url }}"
+             alt="" /></a>
+</p>
+{% endif %}
+<p>{{ obj.description }}</p>

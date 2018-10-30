@@ -1,0 +1,25 @@
+{% load i18n %}
+<div class="card bg-white border-0{% if object.css_class %}
+            {{ object.css_class }}{% endif %}">
+    <!-- editorial content for non-specific placeholders -->
+    <figure class="figure">
+        {% if object.image %}
+        <img src="{{ object.image.url }}"
+             class="figure-img img-fluid"
+             alt="{{ object.image_caption|striptags }}">
+        {% endif %}
+        {% if object.image_caption %}
+        <figcaption class="figure-caption text-center">
+            {{ object.image_caption|safe }}
+        </figcaption>
+        {% endif %}
+    </figure>
+    <div class="card-body">
+        <h3 class="card-title">{% if object.website %}
+            <a href="{{ object.website }}">
+                {{ object.title }}</a>{% else %}
+            {{ object.title }}{% endif %}</h3>
+        <h4 class="card-subtitle">{{ object.subtitle }}</h4>
+        <div class="card-text">{{ object.description|safe }}</div>
+    </div>
+</div>

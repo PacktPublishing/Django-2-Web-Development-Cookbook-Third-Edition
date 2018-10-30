@@ -1,0 +1,1 @@
+tree --dirsfirst -F -I '*.MYD|*.MYI|*.frm|*.opt|*.ibd|*.CSM|*.CSV|*.TRG|*.TRN|ib_*|*.pem|auto.cnf|*.iml|python*|__pycache__|activate*|django-admin*|easy_install*|pip*|wheel' $1

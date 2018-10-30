@@ -1,0 +1,59 @@
+{% verbatim %}
+<script type="text/x-tmpl" id="template-download">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-download">
+        <td>
+            <span class="preview">
+    {% if (file.thumbnailUrl) { %}
+                <a href="{%=file.url%}" data-gallery
+                   title="{%=file.name%}"
+                   download="{%=file.name%}">
+                    <img src="{%=file.thumbnailUrl%}"></a>
+    {% } %}
+            </span>
+        </td>
+        <td>
+            <p class="name">
+    {% if (file.url) { %}
+                <a href="{%=file.url%}"
+                   {%=file.thumbnailUrl?'data-gallery':''%}
+                   title="{%=file.name%}"
+                   download="{%=file.name%}">
+                    <img src="{%=file.thumbnailUrl%}"></a>
+    {% } else { %}
+                <span>{%=file.name%}</span>
+    {% } %}
+            </p>
+    {% if (file.error) { %}
+            <div>
+                <span class="label label-danger">
+                    {%=o.options.i18n('Error') %}</span>
+                {%=file.error%}
+            </div>
+    {% } %}
+        </td>
+        <td><span class="size">
+            {%=o.formatFileSize(file.size)%}
+        </span></td>
+        <td>
+    {% if (file.deleteUrl) { %}
+            <button data-type="{%=file.deleteType%}"
+                    data-url="{%=file.deleteUrl%}"
+                    {% if (file.deleteWithCredentials) { %}
+                    data-xhr-fields='{"withCredentials":true}'
+                    {% } %}
+                    class="btn btn-danger delete">
+                <i class="ion-trash-a"></i>
+                <span>{%=o.options.i18n('Remove') %}</span>
+            </button>
+    {% } else { %}
+            <button class="btn btn-warning cancel">
+                <i class="ion-close-circled"></i>
+                <span>{%=o.options.i18n('Cancel') %}</span>
+            </button>
+    {% } %}
+        </td>
+    </tr>
+{% } %}
+</script>
+{% endverbatim %}

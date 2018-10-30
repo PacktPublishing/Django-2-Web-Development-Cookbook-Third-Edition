@@ -1,0 +1,21 @@
+# ignore everything in the root by default
+/*
+# allow this file of course
+!.gitignore
+# allowed root directories
+!/apps/
+!/bin/
+!/config/
+!/data/
+!/home/
+!/project/
+!/site_static/
+!/templates/
+# allowed root files
+!/Dockerfile
+!/docker-compose.yml
+!/fabfile.py
+# files allowed anywhere
+!README.md
+# specifically ignore certain deeper items
+__pycache__/
