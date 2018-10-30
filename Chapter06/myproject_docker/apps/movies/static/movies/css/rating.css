@@ -1,0 +1,38 @@
+.rating {
+    color: #c90;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+    width: 10em;
+}
+
+.rating s {
+    bottom: 0;
+    color: #fc0;
+    display: block;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+}
+.rating s:after {
+    bottom: 0;
+    display: block;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+.rating s i { visibility: hidden; }
+
+.rating:before {
+    content: "☆☆☆☆☆☆☆☆☆☆";
+}
+.rating s:after {
+    content: "★★★★★★★★★★";
+    font-size: 1.16em; /* filled stars are slightly smaller */
+}

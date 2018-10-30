@@ -1,0 +1,15 @@
+{% load thumbnail %}
+{
+  {% if error %}"error": "{{ error }}",{% endif %}
+  "files": [{% for file in files %}
+    {
+      "name": "{{ file.filename }}",
+      "size": {{ file.size }},
+      "deleteType": "DELETE",
+      "deleteUrl": "{% url 'quote-picture-delete' filename=file.filename %}",
+      "thumbnailUrl": "{% thumbnail file '200x200' %}",
+      "type": "{{ file.content_type }}",
+      "path": "{{ file.name }}"
+    }{% if not forloop.last %},{% endif %}
+  {% endfor %}]
+}

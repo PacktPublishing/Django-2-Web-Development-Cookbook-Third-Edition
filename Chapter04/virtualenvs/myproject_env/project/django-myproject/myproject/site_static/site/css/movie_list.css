@@ -1,0 +1,118 @@
+.movie { min-width: 300px; }
+
+/* \/ Default styles from the Implementing a continuous scroll recipe in Chapter 4 \/ */
+/* (use this block while using the "Other styling enhancements" below) */
+.movie .rank {
+    float: left;
+    margin-right: .5em;
+}
+.movie .rank:after { content: "." }
+/* /\ Default styles from the Implementing a continuous scroll recipe in Chapter 4 /\ */
+
+.movie .year:before { content: "("; }
+.movie .year:after { content: ")"; }
+
+.movie .rating {
+    float: right;
+    margin-left: 2em;
+}
+
+/* \/ Alternate styles from the Implementing a continuous scroll recipe in Chapter 4 \/ */
+/* (do not use this block while using the "Other styling enhancements" below) *
+.movie { position: relative; }
+.movie .rank {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: .5em;
+    text-align: center;
+    line-height: 1em;
+    padding: .25em .5em;
+    position: absolute;
+    left: .5em;
+    top: .5em;
+    border-radius: 1em;
+}
+/* /\ Alternate styles from the Implementing a continuous scroll recipe in Chapter 4 /\ */
+
+/* \/ Other styling enhancements from the Implementing a continuous scroll recipe in Chapter 4 \/ *
+@supports (display: flex) {
+    .movie {
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .movie .rank {
+        float: none;
+        order: 1;
+    }
+
+    .movie .title {
+        flex-grow: 1;
+        order: 2;
+    }
+
+    .movie .year {
+        order: 3;
+    }
+
+    .movie .rating {
+        float: none;
+        order: 4;
+    }
+}
+
+@supports (display: grid) {
+    .movie {
+        display: grid;
+        grid-template: "rank title year rating" / min-content auto min-content min-content;
+    }
+
+    .movie .rank {
+        grid-area: rank;
+    }
+
+    .movie .title {
+        grid-area: title;
+    }
+
+    .movie .year {
+        grid-area: year;
+    }
+
+    .movie .rating {
+        grid-area: rating;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie {
+        display: block;
+    }
+
+    .movie .rank {
+        float: left;
+    }
+
+    .movie .rating {
+        float: none;
+        line-height: inherit;
+    }
+
+    .movie .rating.nested s:after {
+        font-size: 1em;
+        letter-spacing: inherit;
+        line-height: inherit;
+        left: 0;
+    }
+}
+
+@media (min-width: 481px) {
+    @supports (display: flex) or (display: grid) {
+        .movie .year {
+            margin-left: .5em;
+        }
+    }
+}
+/* /\ Other styling enhancements from the Implementing a continuous scroll recipe in Chapter 4 /\ */

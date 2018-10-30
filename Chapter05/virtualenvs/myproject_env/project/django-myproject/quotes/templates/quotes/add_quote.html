@@ -1,0 +1,9 @@
+{% load i18n %}
+
+{% block content %}
+    <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% trans "Save" %}</button>
+    </form>
+{% endblock %}

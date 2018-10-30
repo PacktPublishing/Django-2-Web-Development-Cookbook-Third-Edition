@@ -1,0 +1,37 @@
+{% verbatim %}
+<script type="text/x-tmpl" id="template-upload">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+<tr class="template-upload">
+    <td><span class="preview"></span></td>
+    <td>
+        <p class="name">{%=file.name%}</p>
+        <strong class="error text-danger"></strong>
+    </td>
+    <td>
+        <p class="size">{%=o.options.i18n('Processing...') %}</p>
+    </td>
+    <td width="20%">
+        <div role="progressbar" aria-valuenow="0"
+             aria-valuemin="0" aria-valuemax="100"
+             class="progress progress-striped active"><div
+                class="progress-bar progress-bar-success"
+                style="width:0%;"></div></div>
+    </td>
+    <td>
+    {% if (!i && !o.options.autoUpload) { %}
+        <button class="btn btn-primary start">
+            <i class="ion-upload"></i>
+            <span>{%=o.options.i18n('Start') %}</span>
+        </button>
+    {% } %}
+    {% if (!i) { %}
+        <button class="btn btn-warning cancel">
+            <i class="ion-close-circled"></i>
+            <span>{%=o.options.i18n('Cancel') %}</span>
+        </button>
+    {% } %}
+    </td>
+</tr>
+{% } %}
+</script>
+{% endverbatim %}
