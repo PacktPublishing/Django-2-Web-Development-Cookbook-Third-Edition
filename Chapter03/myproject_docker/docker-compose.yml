@@ -1,0 +1,77 @@
+version: '3'
+services:
+  proxy:
+    image: 'jwilder/nginx-proxy:latest'
+    ports:
+      - '80:80'
+    volumes:
+      - '/var/run/docker.sock:/tmp/docker.sock:ro'
+  db:
+    image: 'mysql:5.7'
+    ports:
+      - '3306'
+    volumes:
+      - './config/my.cnf:/etc/mysql/conf.d/my.cnf'
+      - './mysql:/var/lib/mysql'
+      - './data:/usr/local/share/data'
+    environment:
+      - 'MYSQL_ROOT_PASSWORD'
+      - 'MYSQL_USER'
+      - 'MYSQL_PASSWORD'
+      - 'MYSQL_DATABASE'
+  app:
+    build:
+      context: .
+      args:
+        BUILD_ENV: $BUILD_ENV
+    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - './project:/usr/src/app/myproject'
+      - './media:/usr/src/app/media'
+      - './static:/usr/src/app/static'
+      - './site_static:/usr/src/app/site_static'
+      - './templates:/usr/src/app/templates'
+      - './apps/bulletin_board:/usr/src/app/bulletin_board'
+      - './apps/cv:/usr/src/app/cv'
+      - './apps/demo_app:/usr/src/app/demo_app'
+      - './apps/email_messages:/usr/src/app/email_messages'
+      - './apps/external:/usr/src/app/external'
+      - './apps/ideas:/usr/src/app/ideas'
+      - './apps/magazine:/usr/src/app/magazine'
+      - './apps/movies:/usr/src/app/movies'
+      - './apps/myapp1:/usr/src/app/myapp1'
+      - './apps/myapp2:/usr/src/app/myapp2'
+      - './apps/quotes:/usr/src/app/quotes'
+      - './apps/utils:/usr/src/app/utils'
+    ports:
+      - '8000:8000'
+    links:
+      - db
+    environment:
+      - 'DJANGO_USE_DEBUG'
+      - 'DJANGO_USE_DEBUG_TOOLBAR'
+      - 'SITE_HOST'
+      - 'MEDIA_HOST'
+      - 'STATIC_HOST'
+      - 'VIRTUAL_HOST=${SITE_HOST}'
+      - 'VIRTUAL_PORT=8000'
+      - 'MYSQL_HOST=db'
+      - 'MYSQL_USER'
+      - 'MYSQL_PASSWORD'
+      - 'MYSQL_DATABASE'
+  media:
+    image: 'httpd:latest'
+    volumes:
+      - './media:/usr/local/apache2/htdocs'
+    ports:
+      - '80'
+    environment:
+      - 'VIRTUAL_HOST=${MEDIA_HOST}'
+  static:
+    image: 'httpd:latest'
+    volumes:
+      - './static:/usr/local/apache2/htdocs'
+    ports:
+      - '80'
+    environment:
+      - 'VIRTUAL_HOST=${STATIC_HOST}'

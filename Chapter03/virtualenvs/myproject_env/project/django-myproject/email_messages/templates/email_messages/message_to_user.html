@@ -1,0 +1,8 @@
+{% load i18n %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p>
+        <button type="submit">{% trans "Send" %}</button>
+    </p>
+</form>

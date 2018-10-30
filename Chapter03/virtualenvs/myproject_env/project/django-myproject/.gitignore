@@ -1,0 +1,35 @@
+# Project files and directories
+/myproject/static/
+/myproject/tmp/
+/myproject/media/
+# Local settings
+/myproject/settings.py
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+# C extensions
+*.so
+# PyInstaller
+*.manifest
+*.spec
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+# Translations
+*.pot
+# Django stuff:
+*.log
+# Sphinx documentation
+docs/_build/
+# PyBuilder
+target/
