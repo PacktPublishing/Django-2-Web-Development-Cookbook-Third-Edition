@@ -51,15 +51,12 @@ With the following software and hardware list you can run all code files present
 | 1        | Subversion                          | Windows, Mac OS X, and Linux (Any) |
 | 1        | Git                                 | Windows, Mac OS X, and Linux (Any) |
 | 1        | MySQL Community Server v8+          | Windows, Mac OS X, and Linux (Any) |
-| 4, 6     | Google Maps Platform account with 
-             an API Key enabled for Google Maps 
-             JavaScript, Places, and Geocoding 
-             APIs, at minimum                     | Windows, Mac OS X, and Linux (Any) |
-| 4        | Picturefill                          | Windows, Mac OS X, and Linux (Any) |
-| 4        | JScroll                              | Windows, Mac OS X, and Linux (Any) |
-| 7        | Auth0 Plan and API Key               | Windows, Mac OS X, and Linux (Any) |
-| 7        | Memcached Server                     | Windows, Mac OS X, and Linux (Any) |
-| 7        | Redis Server                         | Windows, Mac OS X, and Linux (Any) |
+| 4, 6     | Google Maps Platform account        | Windows, Mac OS X, and Linux (Any) |
+| 4        | Picturefill                         | Windows, Mac OS X, and Linux (Any) |
+| 4        | JScroll                             | Windows, Mac OS X, and Linux (Any) |
+| 7        | Auth0 Plan and API Key              | Windows, Mac OS X, and Linux (Any) |
+| 7        | Memcached Server                    | Windows, Mac OS X, and Linux (Any) |
+| 7        | Redis Server                        | Windows, Mac OS X, and Linux (Any) |
 
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/9781788837682_ColorImages.pdf).
