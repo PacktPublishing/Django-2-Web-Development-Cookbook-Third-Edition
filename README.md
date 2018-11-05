@@ -65,19 +65,23 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ### Related products <Other books you may enjoy>
 * Django Design Patterns and Best Practices - Second Edition [[Packt]](https://www.packtpub.com/web-development/django-design-patterns-and-best-practices-second-edition?utm_source=GitHub&utm_medium=repository&utm_campaign=9781788831345) [[Amazon]](https://www.amazon.com/dp/1788831349)
 
-* Linux Device Drivers Development [[Packt]](https://www.packtpub.com/networking-and-servers/linux-device-drivers-development?utm_source=github&utm_medium=repository&utm_campaign=9781785280009) [[Amazon]](https://www.amazon.com/dp/1788293770)
+* Django 2 by Example [[Packt]](https://www.packtpub.com/application-development/django-2-example?utm_source=GitHub&utm_medium=repository&utm_campaign=9781788472487) [[Amazon]](https://www.amazon.com/dp/1788472489)
 
-## Get to Know the Author(s)
-**Author Name**
-Bio
+## Get to Know the Authors
+**Jake Kronika**
+is a senior software engineer with nearly 25 years' experience, has been working with Python since 2005, and Django since 2007. Evolving alongside the web development space, his skillset encompasses HTML5, CSS3, and ECMAScript 6 on the frontend, plus Python, Django, Ruby on Rails, Node.js, and much more besides on the server side.
+Currently a senior software engineer and development team lead, he collaborates with skilled designers, business stakeholders, and developers around the world to architect robust web applications. In his spare time, he also provides full-spectrum web services as sole proprietor of Gridline Design and Development.
+Prior to this book, he has acted as a technical reviewer for several other Packt titles.
 
-**Author Name**
-Bio
+**Aidas Bendoraitis**
+ has been professionally working with web technologies for over a decade. Over the last 10 years at a Berlin-based company, studio 38 pure communication GmbH, together with a creative team, he has developed a number of small and large-scale Django projects, mostly in the cultural area. At the moment he is also working as software architect at a London-based mobile startup, Hype.
+Aidas regularly attends the meetups of the Django User Group in Berlin, occasionally visits Django and Python conferences, and writes a blog about Django.
+
 
 
 ## Other books by the authors
-* [Mastering Linux Network Administration](https://www.packtpub.com/networking-and-servers/mastering-linux-network-administration?utm_source=github&utm_medium=repository&utm_campaign=9781784399597)
-* [Linux Mint Essentials](https://www.packtpub.com/networking-and-servers/linux-mint-essentials?utm_source=github&utm_medium=repository&utm_campaign=9781782168157)
+* [Web Development with Django Cookbook - Second Edition](https://www.packtpub.com/web-development/web-development-django-cookbook-second-edition?utm_source=GitHub&utm_medium=repository&utm_campaign=9781785886775)
+* [Django: Web Development with Python](https://www.packtpub.com/web-development/django-web-development-python?utm_source=GitHub&utm_medium=repository&utm_campaign=9781787121386)
 
 ### Suggestions and Feedback
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
