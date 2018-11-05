@@ -66,7 +66,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 
 ### Related products <Other books you may enjoy>
-* Linux: Powerful Server Administration [[Packt]](https://www.packtpub.com/networking-and-servers/linux-powerful-server-administration?utm_source=github&utm_medium=repository&utm_campaign=9781788293778) [[Amazon]](https://www.amazon.com/dp/1788293770)
+* Django Design Patterns and Best Practices - Second Edition [[Packt]](https://www.packtpub.com/web-development/django-design-patterns-and-best-practices-second-edition?utm_source=GitHub&utm_medium=repository&utm_campaign=9781788831345) [[Amazon]](https://www.amazon.com/dp/1788831349)
 
 * Linux Device Drivers Development [[Packt]](https://www.packtpub.com/networking-and-servers/linux-device-drivers-development?utm_source=github&utm_medium=repository&utm_campaign=9781785280009) [[Amazon]](https://www.amazon.com/dp/1788293770)
 
