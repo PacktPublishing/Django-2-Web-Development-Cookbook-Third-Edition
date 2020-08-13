@@ -23,7 +23,7 @@ alt="https://www.packtpub.com/" border="5" /></a>
 
  ## Errata
  
- * Page 6 - About the reviewers (Mayank Sharma): **He has been with Microsoft for 5 years, worked as Project Manager for Azure Integration Services. _should be_ He has been with Microsoft for 5 years, worked in a role of Program Manager for Azure Integration Services.**
+ * Page 6 - About the reviewers (Mayank Sharma): **He has been with Microsoft for 5 years, worked as Project Manager for Azure Integration Services.** _should be_ **He has been with Microsoft for 5 years, worked in the role of Program Manager for Azure Integration Services.**
 
 ## Instructions and Navigations
 All of the code is organized into folders. For example, Chapter02.
