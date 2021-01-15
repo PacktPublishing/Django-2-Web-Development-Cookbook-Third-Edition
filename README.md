@@ -1,8 +1,3 @@
-## $5 Tech Unlocked 2021!
-[Buy and download this product for only $5 on PacktPub.com](https://www.packtpub.com/)
------
-*The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
-
 # Django 2 Web Development Cookbook - Third Edition
 
 <a href="https://www.packtpub.com/web-development/django-2-web-development-cookbook-third-edition?utm_source=GitHub&utm_medium=repository&utm_campaign=9781788290920"><img src="https://www.packtpub.com/sites/default/files/B09432_New_cover.png" alt="Django 2 Web Development Cookbook - Third Edition" height="256px" align="right"></a>
